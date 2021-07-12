@@ -1,0 +1,17 @@
+* {
+    /* para que el elemento sea del tamaño de la ventana */
+    /* suma el padding con el width del elemento */
+    box-sizing: border-box;
+    /* se quitan los bordes */
+    padding:0;
+    margin:0;
+}
+
+main {
+	width: 100%;
+	height: 500px;
+    /* pinta una linea */
+	border: 10px solid grey;
+    /* se pone sin scroll */
+	padding: 20px 35px;
+}

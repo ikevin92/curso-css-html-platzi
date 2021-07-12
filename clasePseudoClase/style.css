@@ -1,0 +1,38 @@
+.main-nav {
+	margin-top: 10px;
+	/* sin puntos */
+	list-style: none;
+	/* dimension interna a la izquierda */
+	padding-left: 10px;
+	/* color fondo */
+	background-color: #13a4a4;
+}
+
+.main-nav__item {
+	/* se ponen en linea */
+	display: inline-block;
+}
+/* ser especifico a la etiqueta a de la clase  */
+.main-nav__item a {
+	color: white;
+	/* distancia entre elementos */
+	padding: 5px;
+	border-radius: 10px;
+	/* quita la linea del texto */
+	text-decoration: none;
+}
+
+/* cambios cuando esta el mouse  */
+.main-nav__item :hover {
+	color: blue;
+}
+/* cuando se activa el link */
+.main-nav__item a:active {
+	color: red;
+}
+
+/* le pone elementos despues del contenido */
+.main-nav__item a::after {
+    content:" | ";
+}
+

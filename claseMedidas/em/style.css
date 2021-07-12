@@ -1,0 +1,8 @@
+.text-container {
+  /* 1 em es igual a 16 px */
+  font-size: 1em;
+}
+
+.text-container div{
+  font-size: 1.5em;
+}

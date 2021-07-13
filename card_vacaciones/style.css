@@ -11,6 +11,9 @@
 	font-family: 'IBM Plex Sans', sans-serif;
 	opacity: 1;
 }
+body {
+	padding: 100px;
+}
 
 .card {
 	margin-top: 150px;
@@ -22,6 +25,7 @@
 	border-radius: 3px;
 }
 
+/* HEADER */
 .card .card-header {
 	background-color: #6f2fd3;
 	width: 56.188rem;
@@ -32,76 +36,96 @@
 	align-items: center;
 	padding: 0.625rem;
 }
-
 .card .card-header p {
-	font-size: 14px;
+	font-size: 0.875rem;
 }
-
-.card-header-nombre {
-	font: normal normal medium 22px/38px IBM Plex Sans;
-  letter-spacing: -0.55px;
-}
-
-.card-header-email {
-  font: normal normal medium 14px/38px IBM Plex Sans;
-letter-spacing: -0.35px;
-}
-
 .card-header-right {
 	margin-right: 1rem;
 	margin-left: 0;
 	text-align: end;
 	border: 1px solid tomato;
 }
-
 .card-header-left {
-  display: flex;
+	display: flex;
 	text-align: left;
-  align-items: center;
+	align-items: center;
 	border: 1px solid tomato;
 	/* margin-left: -5rem; */
 }
-
 .card-img-container {
-	width: 2.5rem;
+	width: 2.6rem;
 	height: 100%;
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 	margin-left: 1px;
-  margin-right: 15px;
+	margin-right: 15px;
 	border: 1px solid tomato;
 }
-
-img {
-  width: 2.5rem;
-  height: 2.5rem;
-	border-radius: 50px;
+.card-header .card-header-left .card-img-container img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
 }
-
-
+.card-header .card-header-left .card-header-name {
+	font: normal normal medium 22px/38px IBM Plex Sans;
+	letter-spacing: -0.55px;
+}
+.card-header .card-header-left .card-header-email {
+	font: normal normal medium 14px/38px IBM Plex Sans;
+	letter-spacing: -0.022rem;
+}
+.card-header .card-header-right.card-header-date {
+	font: normal normal medium 14px/38px IBM Plex Sans;
+}
+.card-header .card-header-right .card-header-number {
+	font: normal normal medium 12px/38px IBM Plex Sans;
+	font-size: 0.75rem;
+	letter-spacing: -0.3px;
+}
 /* BODY CARD */
 .card-body {
-  margin: 10px;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid tomato;
-  justify-content: space-around;
+	margin: 10px;
+	height: 45%;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid greenyellow;
+	justify-content: space-around;
+	letter-spacing: -0.022rem;
+	color: #3f4f66;
 }
 
-.card-body-start {
-  display: flex;
-  justify-content: space-between;
+.card-body .card-body-start {
+	display: flex;
+	justify-content: space-between;
+	align-items: initial;
+	border: 1px solid blue;
 }
 
-.card-body-end {
-  display: flex;
-  justify-content: space-between;
+.card-body .card-body-end {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid tomato;
+	margin-top: 0.5rem;
 }
 
-.date {
-  color: #6f2fd3;
-  text-align: left;
-  letter-spacing: -0.35px;
-  font: normal normal bold 14px/38px IBM Plex Sans;
+.card-body .card-body-start .card-body-date {
+	color: #6f2fd3;
+	text-align: left;
+	letter-spacing: -0.022rem;
+	font: normal normal bold 14px/38px IBM Plex Sans;
+}
+
+.card-body .card-body-start .card-body-ap {
+	color: #6f2fd3;
+	text-align: left;
+	letter-spacing: -0.022rem;
+	font: normal normal medium 14px/20px IBM Plex Sans;
+}
+
+.card-body .card-body-start .card-body-status {
+	color: #ffab48;
+}
+
+.card-body .card-body-start .card-body-info-date {
+	font: normal normal medium 14px/38px IBM Plex Sans;
 }

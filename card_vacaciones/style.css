@@ -34,22 +34,18 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.625rem;
+	/* padding: 0.625rem; */
 }
 .card .card-header p {
 	font-size: 0.875rem;
 }
-.card-header-right {
-	margin-right: 1rem;
-	margin-left: 0;
-	text-align: end;
-	border: 1px solid tomato;
-}
+
 .card-header-left {
 	display: flex;
 	text-align: left;
 	align-items: center;
-	border: 1px solid tomato;
+  margin-left: 1.5rem;
+	/* border: 1px solid tomato; */
 	/* margin-left: -5rem; */
 }
 .card-img-container {
@@ -59,7 +55,7 @@ body {
 	align-items: center;
 	margin-left: 1px;
 	margin-right: 15px;
-	border: 1px solid tomato;
+	/* border: 1px solid tomato; */
 }
 .card-header .card-header-left .card-img-container img {
 	width: 40px;
@@ -74,6 +70,11 @@ body {
 	font: normal normal medium 14px/38px IBM Plex Sans;
 	letter-spacing: -0.022rem;
 }
+.card-header-right {
+	margin-right: 1.5rem;
+	text-align: end;
+	/* border: 1px solid tomato; */
+}
 .card-header .card-header-right.card-header-date {
 	font: normal normal medium 14px/38px IBM Plex Sans;
 }
@@ -84,27 +85,27 @@ body {
 }
 /* BODY CARD */
 .card-body {
-	margin: 10px;
+	margin:  1.5rem;
 	height: 45%;
 	display: flex;
 	flex-direction: column;
-	border: 1px solid greenyellow;
 	justify-content: space-around;
 	letter-spacing: -0.022rem;
 	color: #3f4f66;
+	/* border: 1px solid greenyellow; */
 }
 
 .card-body .card-body-start {
 	display: flex;
 	justify-content: space-between;
 	align-items: initial;
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 }
 
 .card-body .card-body-end {
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid tomato;
+	/* border: 1px solid tomato; */
 	margin-top: 0.5rem;
 }
 
@@ -121,11 +122,27 @@ body {
 	letter-spacing: -0.022rem;
 	font: normal normal medium 14px/20px IBM Plex Sans;
 }
-
-.card-body .card-body-start .card-body-status {
+.card-body .card-body-start .card-body-info-status {
+	/* border: 1px solid tomato; */
+	/* padding: auto; */
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+}
+.card-body .card-body-start .card-body-info-status .card-body-status {
 	color: #ffab48;
 }
 
 .card-body .card-body-start .card-body-info-date {
 	font: normal normal medium 14px/38px IBM Plex Sans;
+}
+
+.card-body .card-body-end .card-body-info-status {
+	/* border: 1px solid tomato; */
+	/* padding: auto; */
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
 }
